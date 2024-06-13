@@ -14,6 +14,20 @@ body {
   background-color: #fff;
 }
 
+footer {
+  color: #fff;
+  padding: 1rem;
+  background-color: #000;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #4169e1;
+}
+
 ul,
 li {
   list-style-type: none;
@@ -119,7 +133,6 @@ span .about__description {
   justify-self: center;
 }
 
-
 .role__title {
   margin: 1rem 0;
 }
@@ -183,7 +196,7 @@ span .about__description {
 .icons {
   gap: 10px;
   display: grid;
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
 }
@@ -247,11 +260,6 @@ span .about__description {
   transition: 0.5s;
 }
 
-footer {
-  background-color: #000;
-  height: 50vh;
-}
-
 @media (min-width: 751px) {
   .nav-list a {
     font-weight: 700;
@@ -284,6 +292,17 @@ footer {
 
   .details li {
     font-size: 18px;
+  }
+
+  .footer_information {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .credits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 
@@ -405,6 +424,23 @@ footer {
     text-align: inherit;
     grid-template-columns: 1fr;
   }
+
+  .footer_information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .credits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+
+  .credits ul li {
+    list-style-type: disc;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 431px) {
@@ -418,32 +454,43 @@ footer {
 }
 
 @media (min-width: 432px) and (max-width: 1290px) {
+  .logo,
   .details h2 {
-    font-size: 40px;
+    font-size: 32px;
   }
 
-  .order p, .order li {
-    font-size: 32px !important;
-    color: red !important;
+  .order p,
+  .order li {
+    font-size: 28px;
   }
 
   .button {
     font-size: 28px;
   }
 
+  .nav-list li a {
+    font-size: 32px;
+  }
+
   .about span h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .about__description {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .role__title {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .role__assignments {
+    font-size: 22px;
+  }
+
+  .contact,
+  .contact h4,
+  .footer_information {
     font-size: 24px;
   }
 }
